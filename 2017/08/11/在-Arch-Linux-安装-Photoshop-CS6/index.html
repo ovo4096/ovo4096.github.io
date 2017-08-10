@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于这个博客 | Sam Hsueh&#39;s Blog</title>
+  <title>在 Arch Linux 安装 Photoshop CS6 | Sam Hsueh&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="因为记忆力不够好，所以还是要开始写写博客记录一下。">
+  <meta name="description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。 准备工作使用 pacman 安装 wine 和 PlayOnLinux 1# pacman -S wine playonlinux 配">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于这个博客">
-<meta property="og:url" content="https://ovo4096.github.io/2017/08/09/关于这个博客/index.html">
+<meta property="og:title" content="在 Arch Linux 安装 Photoshop CS6">
+<meta property="og:url" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/index.html">
 <meta property="og:site_name" content="Sam Hsueh&#39;s Blog">
-<meta property="og:description" content="因为记忆力不够好，所以还是要开始写写博客记录一下。">
+<meta property="og:description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。 准备工作使用 pacman 安装 wine 和 PlayOnLinux 1# pacman -S wine playonlinux 配">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-08T19:09:44.534Z">
+<meta property="og:updated_time" content="2017-08-10T16:59:38.903Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于这个博客">
-<meta name="twitter:description" content="因为记忆力不够好，所以还是要开始写写博客记录一下。">
+<meta name="twitter:title" content="在 Arch Linux 安装 Photoshop CS6">
+<meta name="twitter:description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。 准备工作使用 pacman 安装 wine 和 PlayOnLinux 1# pacman -S wine playonlinux 配">
   
     <link rel="alternate" href="/atom.xml" title="Sam Hsueh&#39;s Blog" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-关于这个博客" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-在-Arch-Linux-安装-Photoshop-CS6" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/08/09/关于这个博客/" class="article-date">
-  <time datetime="2017-08-08T19:04:32.000Z" itemprop="datePublished">2017-08-09</time>
+    <a href="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/" class="article-date">
+  <time datetime="2017-08-10T16:17:00.000Z" itemprop="datePublished">2017-08-11</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于这个博客
+      在 Arch Linux 安装 Photoshop CS6
     </h1>
   
 
@@ -86,12 +86,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>因为记忆力不够好，所以还是要开始写写博客记录一下。</p>
+        <p>在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>使用 pacman 安装 wine 和 PlayOnLinux</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># pacman -S wine playonlinux</div></pre></td></tr></table></figure>
+<h2 id="配置-wine"><a href="#配置-wine" class="headerlink" title="配置 wine"></a>配置 wine</h2><ol>
+<li>打开安装好的 PlayOnLinux 选择左边的 <code>Install a program</code></li>
+<li>等加载的圈圈转完选左下角的 <code>Install a non-listed program</code></li>
+<li>弹出手动安装的界面点击 <code>Next</code> 直到提示问你要怎么做的选项界面，选择 <code>Install a program in a new virtual drive</code> 点击 <code>Next</code></li>
+<li>在输入框输入 <code>Photoshop</code> 点击 <code>Next</code></li>
+<li>多选 <code>Configure Wine</code> 和 <code>Install some libraries</code></li>
+</ol>
+<p>待续…</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ovo4096.github.io/2017/08/09/关于这个博客/" data-id="cj66ovw7u0000ztp9l9337ex3" class="article-share-link">Share</a>
+      <a data-url="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/" data-id="cj66ovw820001ztp900pk62oz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -100,15 +110,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          在 Arch Linux 安装 Photoshop CS6
-        
-      </div>
-    </a>
   
+    <a href="/2017/08/09/关于这个博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">关于这个博客</div>
+    </a>
   
 </nav>
 
