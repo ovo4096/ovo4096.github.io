@@ -5,17 +5,37 @@
   
   <title>在 Arch Linux 安装 Photoshop CS6 | Sam Hsueh&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。 准备工作使用 pacman 安装 wine 和 PlayOnLinux 1# pacman -S wine playonlinux 配">
+  <meta name="description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只有虚拟机中或者使用 wine 了。 wine 比起虚拟机可以更少的占用系统资源，也可以更好的和其它本地软件交互，缺点是配置起来比较复杂，至少我没有一次安装成功，所以本文介绍在 Arch Linux 安装 Photoshop CS6 的方法。 准备工作使用 p">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在 Arch Linux 安装 Photoshop CS6">
 <meta property="og:url" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/index.html">
 <meta property="og:site_name" content="Sam Hsueh&#39;s Blog">
-<meta property="og:description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。 准备工作使用 pacman 安装 wine 和 PlayOnLinux 1# pacman -S wine playonlinux 配">
+<meta property="og:description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只有虚拟机中或者使用 wine 了。 wine 比起虚拟机可以更少的占用系统资源，也可以更好的和其它本地软件交互，缺点是配置起来比较复杂，至少我没有一次安装成功，所以本文介绍在 Arch Linux 安装 Photoshop CS6 的方法。 准备工作使用 p">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-10T16:59:38.903Z">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-1.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-2.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-3.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-4.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-5.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-6.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-7.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-8.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-9.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-1.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-2.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-3.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-4.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-5.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-6.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-7.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-8.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/hack-step-1.png">
+<meta property="og:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/finally.png">
+<meta property="og:updated_time" content="2017-08-11T20:30:23.959Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在 Arch Linux 安装 Photoshop CS6">
-<meta name="twitter:description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。 准备工作使用 pacman 安装 wine 和 PlayOnLinux 1# pacman -S wine playonlinux 配">
+<meta name="twitter:description" content="在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只有虚拟机中或者使用 wine 了。 wine 比起虚拟机可以更少的占用系统资源，也可以更好的和其它本地软件交互，缺点是配置起来比较复杂，至少我没有一次安装成功，所以本文介绍在 Arch Linux 安装 Photoshop CS6 的方法。 准备工作使用 p">
+<meta name="twitter:image" content="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-1.png">
   
     <link rel="alternate" href="/atom.xml" title="Sam Hsueh&#39;s Blog" type="application/atom+xml">
   
@@ -86,22 +106,82 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只能在虚拟机中或者使用 wine，本文主要介绍在 Arch Linux 中使用 wine 安装 Photoshop 的方法。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>使用 pacman 安装 wine 和 PlayOnLinux</p>
+        <p>在 Linux 中用 Photoshop 非常不容易，因为 Adobe 没有官方支持的 Linux 版本，所以为了使用 Photoshop 只有虚拟机中或者使用 wine 了。</p>
+<p>wine 比起虚拟机可以更少的占用系统资源，也可以更好的和其它本地软件交互，缺点是配置起来比较复杂，至少我没有一次安装成功，所以本文介绍在 Arch Linux 安装 Photoshop CS6 的方法。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>使用 pacman 安装 wine 和 PlayOnLinux。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># pacman -S wine playonlinux</div></pre></td></tr></table></figure>
-<h2 id="配置-wine"><a href="#配置-wine" class="headerlink" title="配置 wine"></a>配置 wine</h2><ol>
-<li>打开安装好的 PlayOnLinux 选择左边的 <code>Install a program</code></li>
-<li>等加载的圈圈转完选左下角的 <code>Install a non-listed program</code></li>
-<li>弹出手动安装的界面点击 <code>Next</code> 直到提示问你要怎么做的选项界面，选择 <code>Install a program in a new virtual drive</code> 点击 <code>Next</code></li>
-<li>在输入框输入 <code>Photoshop</code> 点击 <code>Next</code></li>
-<li>多选 <code>Configure Wine</code> 和 <code>Install some libraries</code></li>
-</ol>
-<p>待续…</p>
+<p>这里可能有的同学会问为啥要用 PlayOnLinux，其实我只是想方便的管理 wine 版本和通过选项来安装 wine 依赖库（在看懂教程后用 winetricks 可能会更方便）。</p>
+<p>还有本文重点不是通过 PlayOnLinux 安装 Photoshop ，因为 PlayOnLinux 提供的安装 Photoshop CS6 的脚本并不能正常工作在 Arch Linux，重点是利用 pacman 安装的 wine 版本来安装 PS（后面简称 Photoshop 为 PS 好了）。</p>
+<p>罗嗦了一堆。。。然后从 <a href="https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html" target="_blank" rel="external">官网</a> 下载 Photoshop CS6 安装程序就好了，具体位置在网页下方 <strong>Photoshop CS6, Photoshop CS6 Extended</strong> 选项当中。</p>
+<p>这样准备工作就完成了。</p>
+<h2 id="配置-wine"><a href="#配置-wine" class="headerlink" title="配置 wine"></a>配置 wine</h2><p>打开 PlayOnLinux 点击左边栏中的 <strong>Install a program</strong> 之后在新界面左下角选择 <strong>Install a non-listed program</strong> 打开手动安装向导。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-1.png" alt="手动安装向导" title="手动安装向导">
+<p>点击 <strong>Next</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-2.png" alt="创建新的虚拟驱动器" title="创建新的虚拟驱动器">
+<p>选择 <strong>Install a program in a new virtual drive</strong> 点击 <strong>Next</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-3.png" alt="为新的虚拟驱动器命名" title="为新的虚拟驱动器命名">
+<p>填写这个新的虚拟驱动器名称，因为是给 PS 用的这里填 <strong>Photoshop</strong> 或者你认为合理的名字就好，点击 <strong>Next</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-4.png" alt="选择配置步骤" title="选择配置步骤">
+<p>勾选 <strong>Configure Wine</strong> 和 <strong>Install some libraries</strong>，点击 <strong>Next</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-5.png" alt="选择 wine 版本" title="选择 wine 版本">
+<p>选择 <strong>32 bits windows installation</strong>，点击 <strong>Next</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-6.png" alt="配置 wine" title="配置 wine">
+<p>稍等一会，直到弹出配置 wine 的界面，确保 Windows Version 为 <strong>Windows 7</strong>，点击 <strong>OK</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-7.png" alt="选择 wine 依赖组件" title="选择 wine 依赖组件">
+<p>稍等一会，勾选 wine 需要的依赖组件：</p>
+<ul>
+<li>POL_Function_FontsSmoothBGR</li>
+<li>POL_Function_FontsSmoothGrayScale</li>
+<li>POL_Function_FontsSmoothRGB</li>
+<li>POL_Install_atmlib</li>
+<li>POL_Install_corefonts</li>
+<li>POL_Install_FontsSmoothBGR</li>
+<li>POL_Install_FontsSmoothGrayScale</li>
+<li>POL_Install_FontsSmoothRGB</li>
+<li>POL_Install_gdiplus</li>
+<li>POL_Install_gecko</li>
+<li>POL_Install_ie8</li>
+<li>POL_Install_msxml3</li>
+<li>POL_Install_msxml6</li>
+<li>POL_Install_tahoma</li>
+<li>POL_Install_tahoma2</li>
+<li>POL_Install_vcrun2005</li>
+<li>POL_Install_vcrun2008</li>
+</ul>
+<p>点击 <strong>Next</strong> 接下来只要看到 <strong>I Agree</strong> 选项都勾选并点击 <strong>Next</strong> 这一步骤可能要重复多次。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-8.png" alt="ie8 语言版本选择" title="ie8 语言版本选择">
+<p>期间需要配置 ie8 的语言版本选择 <strong>English</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/wine-step-9.png" alt="选择安装程序" title="选择安装程序">
+<p>完成上面的步骤，直到看到选择安装程序的界面，解压从官网下载的 PS 安装程序包，点击 <strong>Browse</strong> 选择解压目录中的 <code>Adobe CS6/Set-up.exe</code> 点击 <strong>Next</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-1.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>如果可以看到 PS 安装界面，那么说明你的 wine 配置没有问题了，接下来需要安装 PS 本体了。</p>
+<h2 id="安装-Photoshop-CS6"><a href="#安装-Photoshop-CS6" class="headerlink" title="安装 Photoshop CS6"></a>安装 Photoshop CS6</h2><p>接着上面步骤来安装 PS 本体，选择 <strong>Try</strong> 进入 Adobe 软件许可界面。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-2.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>点击 <strong>Accept</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-3.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>点击 <strong>Sign in</strong> 因为 wine 版的 PS 无法登录 Adobe 帐号，所以这里需要等它网络请求超时，通过离线的方式安装。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-4.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>点击 <strong>Connect Later</strong>。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-5.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>如果不需要特别其它配置，点击 <strong>Install</strong> 等待安装完成。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-6.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>点击 <strong>Close</strong>，完成安装。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-7.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>选择 <strong>Photoshop.exe</strong> 创建 wine 运行的快捷方式。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/ps-step-8.png" alt="Photoshop 安装界面" title="Photoshop 安装界面">
+<p>选择 <strong>I don’t want to make anther shortcut</strong> 点击 <strong>Next</strong> 完成全部的安装。</p>
+<p>做到这一步 PS 应该成功安装了😂，尝试在 PlayOnLinux 或者桌面图标运行它。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/hack-step-1.png" alt="Photoshop 启动界面" title="Photoshop 启动界面">
+<p>但是好像仍然不能打开 PS，因为 PS 要求我们登录 Adobe 帐号但是不管怎么点 <strong>Sign in</strong> 都无法登录，所以我们只能通过破解 PS 的方式绕过登录了（只能怪 Adobe 不支持 Linux 还这么毒瘤）。。。</p>
+<h2 id="破解-Photoshop"><a href="#破解-Photoshop" class="headerlink" title="破解 Photoshop"></a>破解 Photoshop</h2><p>破解非常简单，先关闭之前打开的 PS 用 PlayOnLinux 或者自己找到 PS 的安装目录，替换 amtlib.dll 为 <a href="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/amtlib.dll" title="破解版的 amtlib.dll">破解版的 amtlib.dll</a>，然后再次运行。</p>
+<img src="/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/finally.png" alt="Photoshop" title="Photoshop">
+<p>😂😂😂</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>如果打开 PSD 软件内的编辑区域是黑屏或者花屏，在 PS 设置中设置不使用图形处理器，然后重启它再试。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/" data-id="cj66ovw820001ztp900pk62oz" class="article-share-link">Share</a>
+      <a data-url="https://ovo4096.github.io/2017/08/11/在-Arch-Linux-安装-Photoshop-CS6/" data-id="cj686lxsf0001o7p91pfwhaop" class="article-share-link">Share</a>
       
       
     </footer>
